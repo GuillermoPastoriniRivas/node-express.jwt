@@ -13,6 +13,7 @@ const sender = require('./controllers/sender');
 const auth = require('./controllers/auth');
 
 // http://mongoosejs.com/docs/promises.html
+
 mongoose.Promise = global.Promise;
 mongoose.connect(config.dbUrl, {server: {socketOptions: {keepAlive: 120}}});
 

@@ -1,6 +1,6 @@
 const User = require('../models/schemas/user');
 const bcrypt = require('bcrypt-nodejs');
-
+//hola
 exports.createAdmin = function(req, res, next) {
     if (typeof req.body.email !== 'string')
         return res.status(400).send('Missing email');
